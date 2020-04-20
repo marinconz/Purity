@@ -3,6 +3,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import TabBarIcon from '../components/TabBarIcon';
 import HomeScreen from '../screens/HomeScreen';
 import LinksScreen from '../screens/LinksScreen';
+import TestScreen from '../screens/TestScreen';
 
 const BottomTab = createBottomTabNavigator();
 const INITIAL_ROUTE_NAME = 'Home';
@@ -31,7 +32,16 @@ export default function BottomTabNavigator({ navigation, route }) {
           tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-camera" />,
         }}
       />
+      <BottomTab.Screen
+        name="Test"
+        component={TestScreen}
+        options={{
+          title: '¿Qué tanto contaminas?',
+          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-eco" />,
+        }}
+        />
       
+
     </BottomTab.Navigator>
   );
 }
