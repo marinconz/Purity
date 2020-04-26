@@ -3,7 +3,8 @@ import { StyleSheet, Text, View, FlatList, ShadowPropTypesIOS } from 'react-nati
 
 export default function HomeScreen() {
   
-    const list = [{key:'Ingrediente 0', des: 'Toxic'},
+    const list = 
+    [{key:'Ingrediente 0', classification: 'Toxic', decription: ''},
     {key:'Ingrediente 1', des: 'Toxic'},
     {key:'Ingrediente 2', des: 'Toxic'},
     {key:'Ingrediente 3', des: 'Toxic'},
