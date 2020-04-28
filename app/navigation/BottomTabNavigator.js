@@ -37,7 +37,7 @@ export default function BottomTabNavigator({ navigation, route }) {
         component={TestScreen}
         options={{
           title: '¿Qué tanto contaminas?',
-          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-eco" />,
+          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-alert" />,
         }}
         />
       
@@ -51,7 +51,7 @@ function getHeaderTitle(route) {
 
   switch (routeName) {
     case 'Home':
-      return 'How to get started';
+      return 'Catálogo de ingredientes peligrosos';
     case 'Links':
       return 'Camara';
   }
