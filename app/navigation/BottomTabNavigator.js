@@ -51,7 +51,7 @@ function getHeaderTitle(route) {
 
   switch (routeName) {
     case 'Home':
-      return 'Catálogo de ingredientes peligrosos';
+      return 'Ingredientes comunes en productos de limpieza';
     case 'Links':
       return 'Camara';
   }
