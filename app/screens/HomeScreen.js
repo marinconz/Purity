@@ -18,7 +18,7 @@ export default function HomeScreen() {
         setIngredients(response.data);
       });
   }, []);
-  console.log(ingredients)
+  
 
   return (
     <FlatList
