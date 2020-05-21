@@ -6,6 +6,7 @@ import { FontAwesome, Ionicons,MaterialCommunityIcons } from '@expo/vector-icons
 import * as ImagePicker from 'expo-image-picker';
 import { DialogComponent }from 'react-native-dialog-component';
 import * as MediaLibrary from 'expo-media-library';
+import * as Linking from 'expo-linking';
 
 
 
@@ -48,9 +49,10 @@ export default class LinksScreen extends React.Component {
   takePicture = async () => {
     if (this.camera) {
       let photo = await this.camera.takePictureAsync();
-      //console.log(photo);
+      console.log(photo);
       const { uri } = await this.camera.takePictureAsync();
       const asset = await MediaLibrary.createAssetAsync(uri);
+      Linking.openURL('http://www.eafit.edu.co/');
 
       
     }
@@ -92,7 +94,8 @@ export default class LinksScreen extends React.Component {
                     alignItems: 'center',
                     backgroundColor: 'transparent',
                   }}
-                  onPress={()=> {this.dialogComponent.show(), this.takePicture()}}
+                  //onPress={()=> {this.dialogComponent.show(), this.takePicture()}}
+                  onPress={()=> {this.takePicture()}}
                   >
                   <FontAwesome
                       name="camera"
