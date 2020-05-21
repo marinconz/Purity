@@ -13,7 +13,7 @@ export default function HomeScreen() {
   };
 
   useEffect(() => {
-    axios.get("http://192.168.1.69:3000/ingredients")
+    axios.get("http://192.168.1.64:3000/ingredients")
       .then((response) => {
         setIngredients(response.data);
       });
