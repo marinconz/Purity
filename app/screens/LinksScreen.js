@@ -5,6 +5,8 @@ import * as Permissions from 'expo-permissions';
 import { FontAwesome, Ionicons,MaterialCommunityIcons } from '@expo/vector-icons';
 import * as ImagePicker from 'expo-image-picker';
 import { DialogComponent }from 'react-native-dialog-component';
+import * as MediaLibrary from 'expo-media-library';
+
 
 
 
@@ -29,6 +31,7 @@ export default class LinksScreen extends React.Component {
     }
     // Camera Permission
     const { status } = await Permissions.askAsync(Permissions.CAMERA);
+    MediaLibrary.requestPermissionsAsync();
     this.setState({ hasPermission: status === 'granted' });
   }
 
@@ -45,7 +48,10 @@ export default class LinksScreen extends React.Component {
   takePicture = async () => {
     if (this.camera) {
       let photo = await this.camera.takePictureAsync();
-      console.log(photo);
+      //console.log(photo);
+      const { uri } = await this.camera.takePictureAsync();
+      const asset = await MediaLibrary.createAssetAsync(uri);
+
       
     }
   }
