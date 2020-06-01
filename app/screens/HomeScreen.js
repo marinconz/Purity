@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { StyleSheet, Text, View, FlatList, ShadowPropTypesIOS } from 'react-native';
+import { StyleSheet, Text, View, FlatList, SafeAreaView, ShadowPropTypesIOS } from 'react-native';
 import { ListItem } from 'react-native-elements';
 import axios from 'axios';
 
@@ -13,40 +13,46 @@ export default function HomeScreen() {
   };
 
   useEffect(() => {
-    axios.get("http://192.168.1.64:3000/ingredients")
+    axios.get("http://192.168.1.54:7000/ingredients")
       .then((response) => {
         setIngredients(response.data);
       });
   }, []);
-  
+
 
   return (
-    <FlatList
-      ItemSeparatorComponent={() => <View style={styles.separator} />}
-      data={ingredients}
-      renderItem={({ item }) => {
-        const subtitle = ` ${item.CLASIFICACIÓN} \n \n ${item.DESCRIPCIÓN}`
-        return (
-          <ListItem
-            key= {item._id}
-            title={item.NOMBRE}
-            subtitle = {subtitle}
-          />
-        );
-      }
-      }
-    />
+    <SafeAreaView style={styles.container}>
+      <FlatList
+        ItemSeparatorComponent={() => <View style={styles.separator} />}
+        data={ingredients}
+        renderItem={({ item }) => {
+          const subtitle = ` ${item.CLASIFICACIÓN} \n \n ${item.DESCRIPCIÓN}`
+          return (
+            <ListItem style = {styles.item}
+              key={item._id}
+              title ={item.NOMBRE}
+              subtitle={subtitle}
+            />
+
+          );
+        }
+        }
+      />
+    </SafeAreaView>
   );
 }
-
 
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+  },
+  item: {
+    color: '#f0ffff',
+  },
+  title: {
+    fontSize: 40,
+
   },
   separator: {
     height: 1,

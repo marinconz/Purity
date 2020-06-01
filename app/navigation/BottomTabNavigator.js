@@ -51,8 +51,10 @@ function getHeaderTitle(route) {
 
   switch (routeName) {
     case 'Home':
-      return 'Ingredientes comunes en productos de limpieza';
+      return 'Ingredientes en productos de limpieza';
     case 'Links':
       return 'Camara';
+    case 'Test':
+      return 'Toma tu quiz';
   }
 }
