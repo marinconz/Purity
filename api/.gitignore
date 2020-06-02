@@ -2,3 +2,8 @@ node_modules/
 APIKey.json
 *.jpg
 *.jpeg
+ingredientSchema.js
+db.csv
+test.txt
+up.js
+test.json
