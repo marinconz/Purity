@@ -1,0 +1,12 @@
+{
+    "type": "service_account",
+    "project_id": "static-nomad-268020",
+    "private_key_id": "92222bed50641ba9a3355e58fcbfd00054573678",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDgpIqjbE60wyQJ\nG5ROdpsezqgguc0OmazABVPb8V/9gvmpol1lAeKyDIEYiYs6x/w1jrfShVS6FYha\nyLBj0nRIwr9vQ03LZ8xQ1ESgD7PpRasalrE8FtWo7S741Cv9GozI9gnBkBbLReYm\nzXXetJG0aAutsRPP/hFP+xWfOoAskPOFueQldKP8K3OSICInweFtegC+ran3ZNph\n5xBc6H7iIL410/SQP+Oo60sWyB/eEsyqy8RerX6ngVg0LTLB3aH3hCUaAZzphfsH\nBU47eB8UM8bYMukAse9jLi8ESKpf/2CrUOh6EqCadtvjVpkr8TEIdRyy+VvmRWrq\nz1xA4NopAgMBAAECggEAAgKK4IMysZSY5RF3elu+j9AgyjkrW+T1Whr6GPrQBW5H\nclR68jFKAFaTDZ+GbMJXD/oczDAH9enFKG3JAT2j73Y5nQLcxnQBbJw3mHiHfy/x\nw9lDEPLx2rLzk4OfeKJlDdPAutgBkjRIBsMaGcHjF1qCdz2BPEBNUppAI2Z0OOHX\nV1oso3EeKtspClHGbal+Gbw6nBt1zFjmvCf7z0fs0B6W53SHbvmEO0tG+fOksQlH\nVsTff/Mu8H0ldO1OYljUT9f3QAKAL1FUdXJAGwuKJLYV0UG7GDOvEm9W2R+yfN5S\n5T32d8KQXv/QJwGS85zsisO6wvfC/w3FGivSfo0FYQKBgQDxTsgqwFcACoVX1jDk\nsogeVD5w6po6pdwP6fuXJwO/MH9pVc5f76Y/PcVDT+TI4lKL5CF+ShpKzAat1cTW\njisEsv6arAJLymwGA9pBnkHKREKf/idLMGeb4KRSJodR0fZRCoibgStT0PNF+Dhf\nKghZixhkFzNplILfqQxZ5q0ZIQKBgQDuUgFj/iJzHOQX7EHdKisTmlETlWVjuVp6\nOL0MDxlezt5/QiwoTJSIEaVI5CQp/eRvQET6kxp7U6pGy9/m6cSNzXyawe38qvbo\n8L2N0ndaprHHzPtBSbOyCEe003nOnwkAGcb0Mc8RKpKi0mgw3eQwojBziuZu007k\nIHNstxP4CQKBgQCeyGxGVVHqIQIlDjgWBLQ04NJFktnxhXoMrrZye6WnhM4SDfhC\ngHswWgEXjdbJqMMQcgjoBPLQDPjIIkXnuJzt9qo6NL0+CfCS9K4FR5Ga+tesV5yb\niTpkA6mctOWOHU6rfPbu/Ev6Vx/9BpxxYkMkSLbABdQ6wRJtAduyvGtigQKBgQCt\necILYF0BQAGErHRRIjXTAhyMTc5M5gpHN2/dDEyiZ6EsLyXne78OwRF4WqE8c9TJ\napYLc/Lt3Lvw5syn0HhD5FUUbZ/nsScj7sF8L7yznu2AC+TE5HpKWJ6hsOJUlg0+\nJoVdEbixvTSaEuDG2W4WPKlaIbyU5XniswByHV4KyQKBgDQJ9Dj3ZdstHbf8mrFV\nAGViMjaG3dqbEIstO8lab4qewv6fhWv9v01d4iLRBLHEUKYO9stPs6OzD3cqIGZN\nxIWMpiZNGJZvGSIgrsm78zssaKVjCtywp4ImVBX594358mVvAvvRIhOhyvldZxmG\nQXAtiQNRaVJOZVVt8SolBwhm\n-----END PRIVATE KEY-----\n",
+    "client_email": "cloud-vision-api@static-nomad-268020.iam.gserviceaccount.com",
+    "client_id": "101439244496337411205",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cloud-vision-api%40static-nomad-268020.iam.gserviceaccount.com"
+  }
