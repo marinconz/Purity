@@ -1,9 +1,4 @@
 node_modules/
+etc/
 APIKey.json
-*.jpg
-*.jpeg
-ingredientSchema.js
-db.csv
-test.txt
-up.js
-test.json
+.gitignore
